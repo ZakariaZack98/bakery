@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  font-family: var(--fnt-noto);
+  overflow-x: hidden;
+  color: var(--clr_accent);
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+a, span {
+  text-decoration: none;
+  display: inline-block;
+}
+img {
+  vertical-align: middle;
+  object-fit: cover;
+}
+:root {
+  --clr_accent: #395542;
+  --clr_brown: #ac845c;
+  --clr_brown_light: #f1dab2;
+  --border_red: 1px solid red;
+  --trn_delay: ease-in 0.3s;
+  --fnt_merriweather: "Merriweather", serif;
+  --fnt-noto: "Noto Sans", system-ui;
+}
+/* ====================Typography=================== */
+.lg-header {
+    font-family: var(--fnt_merriweather);
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.md-header {
+font-family: var(--fnt_merriweather);
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+}
+.commonParagraph {
+    line-height: 200%;
+    font-size: 1.2rem;
+}
+/* ================Navbar=============== */
+#navbar {
+  background-color: white;
+  z-index: 999;
+}
+.navbar {
+  height: 100px;
+  text-transform: uppercase;
+  color: var(--clr_accent);
+  font-weight: 500;
+  background-color: white;
+}
+.navbar-brand {
+  width: 24%;
+}
+.nav-link {
+  margin: 0 0.8rem;
+}
+.nav-item a {
+  transition: var(--trn_delay);
+  border-bottom: 5px solid rgba(255, 255, 255, 0);
+}
+.nav-item a:hover {
+  border-bottom: 5px solid var(--clr_accent);
+  color: rgba(57, 85, 66, 0.479);
+}
+.nav-search {
+  width: 250px;
+  border: 2px solid var(--clr_accent);
+}
+.nav-btn {
+  text-wrap: nowrap;
+}
+.nav-btn:hover {
+  background-color: var(--clr_accent);
+}
+/* =================Banner===================== */
+#banner {
+  width: 100%;
+  height: 80dvh;
+  background-image: url(/images/ezgif-3-7f62b18449.gif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+.bannerText {
+  padding-top: 20%;
+}
+.bannerText__slogan {
+  font-weight: bold;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+.bannerText__logo img {
+  width: 500px;
+}
+.bannerText__btn {
+  background-color: var(--clr_accent);
+}
+.bannerText__btn:hover {
+  background-color: white;
+}
+.bannerText__btn:hover a {
+  color: var(--clr_accent);
+}
+.bannerText__btn a {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+/* ================feature===================== */
+#feature {
+  width: 100%;
+}
+#feature img {
+  width: 100%;
+  object-fit: cover;
+}
+/* ===================Story======================== */
+#story {
+    margin: 130px 0;
+    overflow: hidden;
+}
+#story:hover .storyRight {
+    transform: translateX(0);
+    opacity: 1;
+}
+.storyRight {
+    transform: translateX(100px);
+    opacity: 0;
+    transition: 0.8s ease-out;
+    overflow: hidden;
+}
+.storyLeft__large img{
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+}
+.storyLeft__small {
+    transform: translateY(10%);
+}
+.storyLeft__small img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+.storyRightBody__subHeader {
+    letter-spacing: 2px;
+    transform: translateY(80%);
+}
+.storyRightBody__line {
+    padding: 2px 50px;
+    background-color: var(--clr_accent);
+    margin-top: 50px;
+}
+/* =====================Bakery====================== */
+#bakery {
+    background-color: var(--clr_brown);
+    padding: 100px 0;
+    color: var(--clr_brown_light);
+}
+.bakeryWrapper {
+    gap: 100px;
+}
+.bakeryHead {
+    max-width: 70%;
+}
+.bakeryBody {
+    width: 100%;
+}
+.bakeryBody__image {
+    width: 100%;
+    height: 256px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.bakeryBody__image img {
+    height: 256px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: var(--trn_delay);
+}
+.bakeryBodyItem {
+    transition: var(--trn_delay);
+    cursor: pointer;
+}
+.bakeryBodyItem:hover {
+    transform: translateY(-20px);
+}
+.bakeryBody__image:hover img {
+    scale: 1.1;
+}
+.bakeryBodyItem h3 {
+    letter-spacing: 4px;
+}
+.bakeryBodyItem__hidden {
+    opacity: 0;
+    line-height: 100%;
+    letter-spacing: 2px;
+}
+.bakeryBodyItem:hover .bakeryBodyItem__hidden {
+    opacity: 1;
+    transition: var(--trn_delay);
+    border-bottom: 1px solid var(--clr_brown_light);
+}
+
+
+
+
+
+
+
+/* ====================Media Queries============== */
+@media (max-width: 900px) {
+  .body {
+    width: 100dvw;
+  }
+  .navbar-brand {
+    width: 30%;
+  }
+  .navbar-brand img {
+    width: 200px;
+  }
+  #banner {
+    height: 40dvh;
+  }
+  #feature {
+    margin: 100px 0 20px 0;
+  }
+}
