@@ -244,5 +244,6 @@ font-family: var(--fnt_merriweather);
   }
   .storyRight {
     transform: translateX(0);
+    opacity: 1;
   }
 }
