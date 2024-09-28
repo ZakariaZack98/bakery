@@ -242,4 +242,7 @@ font-family: var(--fnt_merriweather);
   #feature {
     margin: 100px 0 20px 0;
   }
+  .storyRight {
+    transform: translateX(0);
+  }
 }
