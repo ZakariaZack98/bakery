@@ -263,6 +263,7 @@ font-family: var(--fnt_merriweather);
   width: 100%;
   height: 45dvh;
   margin: 80px 0;
+  overflow: hidden;
 }
 .locatorWrapper {
   background-color: rgba(57, 85, 66, 0.425);
@@ -305,6 +306,7 @@ font-family: var(--fnt_merriweather);
   padding: 100px;
   background-color: var(--clr_accent);
   color: var(--clr_brown_light);
+  overflow: hidden;
 }
 .footerTopAbout__logo img {
   width: 350px;
@@ -353,5 +355,11 @@ font-family: var(--fnt_merriweather);
   }
   .newsLetterBody {
     max-width: 90%;
+  }
+  .footerWrapper {
+    transform: translateX(-80px);
+  }
+  .footerBottom {
+    width: 180%;
   }
 }
