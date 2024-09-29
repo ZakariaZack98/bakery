@@ -1,232 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
-    />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
-    />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
-    />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- =====================Navbar Markup========================== -->
-    <section id="navbar">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg ">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"
-              ><img src="images/logo.png" alt=""
-            /></a>
-            <button
-              class="navbar-toggler bg-white"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-0">
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Menu
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Breads</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Cakes</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#">Sandwitches</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Pastry & Pies</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#">Tea & Coffe</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Blended Drinks</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Franchises</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Press</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Locations
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">California</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">New Jersey</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">New York</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Texas</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Verginia</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Illinois</a>
-                    </li>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2 nav-search"
-                  type="search"
-                  placeholder="Your Location"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success nav-btn" type="submit">
-                  Locate Store
-                </button>
-              </form>
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css" />
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- =====================Navbar Markup========================== -->
+  <section id="navbar">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" /></a>
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Breads</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Cakes</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Sandwitches</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Pastry & Pies</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Tea & Coffe</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Blended Drinks</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Franchises</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Press</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Locations
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">California</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">New Jersey</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">New York</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Texas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Verginia</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Illinois</a>
+                  </li>
+              </li>
+            </ul>
+            </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 nav-search" type="search" placeholder="Your Location"
+                aria-label="Search" />
+              <button class="btn btn-outline-success nav-btn" type="submit">
+                Locate Store
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <!-- =====================Navbar Markup========================== -->
+  <!-- =====================Banenr Markup========================== -->
+  <section id="banner">
+    <div class="container-fluid">
+      <div class="bannerWrapper text-white">
+        <div class="bannerText d-flex flex-column align-items-center">
+          <picture class="bannerText__logo">
+            <img src="images/66b3e7d703c722123d0173fa_TLJ_logo_White.png"
+              alt="images/66b3e7d703c722123d0173fa_TLJ_logo_White.png">
+          </picture>
+          <p class="bannerText__slogan text-uppercase text-center">Freshly Baked, Everyday</p>
+          <button type="button" class="btn bannerText__btn py-2 px-5 mt-3"><a href="#">FIND LOCATIONS</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =====================Banner Markup========================== -->
+  <section id="feature">
+    <picture>
+      <img src="images/feature.png" alt="images/feature.png">
+    </picture>
+  </section>
+  <!-- =====================Story Markup========================== -->
+  <section id="story">
+    <div class="storyWrapper row gx-3 flex-column-reverse flex-md-row ps-3">
+      <div class="storyLeft col-lg-7 col-md-6 row gx-3 px-0 px-lg-5">
+        <div class="storyLeft__large col-lg-8">
+          <picture>
+            <img src="images/st-1.webp" alt="images/st-1.webp">
+          </picture>
+        </div>
+        <div class="storyLeft__small col-lg-4 d-flex flex-lg-column gap-3 flex-md-row">
+          <picture>
+            <img src="images/st-2.webp" alt="images/st-2.webp">
+          </picture>
+          <picture>
+            <img src="images/st-3.webp" alt="images/st-3.webp">
+          </picture>
+        </div>
+      </div>
+      <div class="storyRight col-lg-5 col-md-6 px-1 d-flex flex-column row-gap-4">
+        <h1 class="lg-header text-center">TOUS les JOURS: French Asian Bakery</h1>
+        <div class="storyRightBody d-flex flex-column align-items-start row-gap-3 px-4">
+          <p class="storyRightBody__subHeader">OUR STORY</p>
+          <h2 class="storyRightBody__Header md-header">Freshly Baked, Everyday</h2>
+          <p class="storyRightBody__paragraph commonParagraph">With a commitment to using only the finest ingredients,
+            our products are known for their unique flavors and wholesome qualities. Our skilled bakers create a wide
+            array of delicious treats that are freshly baked and ready to be enjoyed by our customers seeking
+            exceptional taste and quality.</p>
+          <span class="storyRightBody__line"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =====================Story Markup========================== -->
+  <!-- =====================Bakery Markup========================== -->
+  <section id="bakery">
+    <div class="container-fluid">
+      <div class="bakeryWrapper d-flex flex-column justify-content-center align-items-center ">
+        <div class="bakeryHead">
+          <h1 class="lg-header text-center">Bakery</h1>
+          <p class="commonParagraph text-center mt-5">At TOUS les JOURS, we offer a wide range of bakery items that are
+            perfect for any occasion. From our freshly baked breads to our decadent cakes and pastries, each of our
+            products is made with the finest ingredients and the utmost care.</p>
+        </div>
+        <div class="bakeryBody px-2 px-lg-5 row row-gap-5">
+          <div class="bakeryBodyItem d-flex flex-column justify-content-center align-items-center row-gap-4 col-lg-6">
+            <div class="bakeryBody__image">
+              <img src="images/bread.webp" alt="images/bread.webp">
+            </div>
+            <h3 class="bakeryBodyItem__header">Bread</h3>
+            <h5 class="bakeryBodyItem__hidden">VIEW BREADS</h5>
+          </div>
+          <div class="bakeryBodyItem d-flex flex-column justify-content-center align-items-center row-gap-4 col-lg-6">
+            <div class="bakeryBody__image">
+              <img src="images/cake.webp" alt="images/cake.webp">
+            </div>
+            <h3 class="bakeryBodyItem__header">Cake</h3>
+            <h5 class="bakeryBodyItem__hidden">VIEW CAKES</h5>
+          </div>
+          <div class="bakeryBodyItem d-flex flex-column justify-content-center align-items-center row-gap-4 col-lg-6">
+            <div class="bakeryBody__image">
+              <img src="images/pastry.webp" alt="images/pastry.webp">
+            </div>
+            <h3 class="bakeryBodyItem__header">Pastry</h3>
+            <h5 class="bakeryBodyItem__hidden">VIEW PASTRIES</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =====================Bakery Markup========================== -->
+  <!-- ============================Beverages Markup=========================== -->
+  <section id="beverages">
+    <div class="container-fluid">
+      <!-- ****************Copied from Bakery Markup************************ -->
+      <div class="bakeryWrapper d-flex flex-column justify-content-center align-items-center ">
+        <div class="bakeryHead">
+          <h1 class="lg-header text-center">Beverages</h1>
+          <p class="commonParagraph text-center mt-5">From bold espresso, to handcrafted smoothies, our beverages a
+            perfect accompaniment to our artisan baked goods.</p>
+        </div>
+        <div class="bakeryBody px-2 px-lg-5 row row-gap-5">
+          <div class="bakeryBodyItem d-flex flex-column justify-content-center align-items-center row-gap-4 col-lg-6">
+            <div class="bakeryBody__image">
+              <img src="images/coffe.webp" alt="images/coffe.webp">
+            </div>
+            <h3 class="bakeryBodyItem__header">Coffe</h3>
+          </div>
+          <div class="bakeryBodyItem d-flex flex-column justify-content-center align-items-center row-gap-4 col-lg-6">
+            <div class="bakeryBody__image">
+              <img src="images/tea.webp" alt="images/tea.webp">
+            </div>
+            <h3 class="bakeryBodyItem__header">Tea & Others</h3>
+          </div>
+          <div class="bakeryBodyItem d-flex flex-column justify-content-center align-items-center row-gap-4 col-lg-6">
+            <div class="bakeryBody__image">
+              <img src="images/blended.webp" alt="images/blended.webp">
+            </div>
+            <h3 class="bakeryBodyItem__header">Blended</h3>
+          </div>
+        </div>
+      </div>
+      <!-- ****************Copied from Bakery Markup************************ -->
+    </div>
+  </section>
+  <!-- ============================Store Markup=========================== -->
+  <section id="store">
+    <div class="container-fluid">
+      <div class="storeWrapper row gy-5">
+        <div class="storeLeft col-lg-6 p-3 p-md-5">
+          <h1 class="lg-header">Find A TOUS les JOURS Near You</h1>
+          <p class="commonParagraph py-4 pe-5">Stop by for a new bakery experience full of decadent baked goods and
+            handcrafted beverages at your nearest TOUS les JOURS.</p>
+          <button type="button" class="btn bannerText__btn py-2 px-5 mt-3"><a href="#">FIND STORES NEAR YOU</a></button>
+        </div>
+        <div class="storeRight col-lg-6">
+          <picture class="storeRight__pic">
+            <img src="images/store.webp" alt="store.webp">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ============================Store Markup=========================== -->
+  <!-- ============================Press Markup=========================== -->
+  <section id="press">
+    <div class="container-fluid">
+      <!-- ****************Copied from Bakery Markup************************ -->
+      <div class="bakeryWrapper d-flex flex-column justify-content-center align-items-center ">
+        <div class="bakeryHead">
+          <h1 class="pressHeader lg-header text-center">Press</h1>
+        </div>
+        <div class="bakeryBody px-2 px-lg-5 row row-gap-5">
+          <div class="bakeryBodyItem d-flex flex-column justify-content-center align-items-center row-gap-2 col-lg-6">
+            <div class="bakeryBody__image">
+              <img src="images/news1.jpeg" alt="images/news1.jpeg">
+            </div>
+            <div class="newsItem__header d-flex justify-content-between">
+              <p>Restaurant News</p>
+              <i class="fa-regular fa-arrow-up-right"></i>
+            </div>
+            <h3 class="newsItem__Headline"><a href="#">TOUS les JOURS Joins Franchise Times’ Prestigious Top 500
+                Franchises List</a></h3>
+          </div>
+          <div class="bakeryBodyItem d-flex flex-column justify-content-center align-items-center row-gap-2 col-lg-6">
+            <div class="bakeryBody__image">
+              <img src="images/news2.jpeg" alt="images/news2.jpeg">
+            </div>
+            <div class="newsItem__header d-flex justify-content-between">
+              <p>Restaurant News</p>
+              <i class="fa-regular fa-arrow-up-right"></i>
+            </div>
+            <h3 class="newsItem__Headline"><a href="#">TOUS les JOURS’ Beverage Expert Takes First Place at National
+                Coffee Competition</a></h3>
+          </div>
+          <div class="bakeryBodyItem d-flex flex-column justify-content-center align-items-center row-gap-2 col-lg-6">
+            <div class="bakeryBody__image">
+              <img src="images/news3.jpeg" alt="images/3.jpeg">
+            </div>
+            <div class="newsItem__header d-flex justify-content-between">
+              <p>Restaurant News</p>
+              <i class="fa-regular fa-arrow-up-right"></i>
+            </div>
+            <h3 class="newsItem__Headline"><a href="#">TOUS les JOURS Joins Franchise Times’ Prestigious Top 500
+                Franchises List</a></h3>
+          </div>
+        </div>
+      </div>
+      <!-- ****************Copied from Bakery Markup************************ -->
+    </div>
+  </section>
+  <!-- ============================Press Markup=========================== -->
+  <!-- ============================Locator Markup=========================== -->
+  <section id="locator" class="text-white">
+    <div class="locatorWrapper d-flex flex-column justify-content-center align-items-center">
+      <h1 class="md-header">Find a TOUS les JOURS Near me</h1>
+      <button type="button" class="btn locator__btn py-2 px-5 mt-3"><a href="#">LOCATE STORE</a></button>
+    </div>
+  </section>
+  <!-- ============================Locator Markup=========================== -->
+  <!-- ============================Newsletter Markup=========================== -->
+  <section id="newsletter">
+    <div class="container-fluid">
+      <div class="newsletterWrapper">
+        <div class="newsLetterHead">
+          <h1 class="md-header text-center">Join Our Newsletter</h1>
+          <p class="regularParagraph text-center">Stay up to date on the latest news and openings, menu items and more.
+          </p>
+        </div>
+        <div class="newsLetterBody py-4">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputName" class="form-label">Your Full Name</label>
+              <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail">
+            </div>
+            <div id="nameHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <div class="mb-3 form-check pt-3">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">I agree to recieve future contents from TOUS Le JOURS by emails.</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-subscribe">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ============================Newsletter Markup=========================== -->
+  <!-- ============================Footer Markup=========================== -->
+  <section id="footer">
+    <div class="container-fluid">
+      <div class="footerWrapper">
+        <div class="footerTop">
+          <div class="footerTopWrapper row gy-5">
+            <div class="footerTopAbout col-lg-4 col-12 col-md-6">
+              <picture class="footerTopAbout__logo">
+                <img src="images/66b3e7d703c722123d0173fa_TLJ_logo_White.png" alt="images/66b3e7d703c722123d0173fa_TLJ_logo_White.png">
+              </picture>
+              <div class="footerTopAbout__social d-flex column-gap-3 py-3">
+                <a href="#"><img src="images/fb.png" alt="images/fb.png"></a>
+                <a href="#"><img src="images/insta.png" alt="images/insta.png"></a>
+                <a href="#"><img src="images/linkd.png" alt="images/linkd.png"></a>
+              </div>
+            </div>
+            <div class="footerTopLinks d-flex flex-md-row flex-column  justify-content-center align-items-baseline gap-lg-5 gap-4 col-lg-8 col-12 col-md-6">
+              <div class="footerTopLinksSection">
+                <h5 class="footerTopLinksSection__Header">BAKERY</h5>
+                <ul class="footerTopLinksSection__List">
+                  <li><a href="#">Bread</a></li>
+                  <li><a href="#">Cake</a></li>
+                  <li><a href="#">Pastry</a></li>
+                  <li><a href="#">BabyShark | KingFrogs</a></li>
+                </ul>
+              </div>
+              <div class="footerTopLinksSection">
+                <h5 class="footerTopLinksSection__Header">BEVERAGES</h5>
+                <ul class="footerTopLinksSection__List">
+                  <li><a href="#">Coffe</a></li>
+                  <li><a href="#">Tea</a></li>
+                  <li><a href="#">Blended Drinks</a></li>
+                </ul>
+              </div>
+              <div class="footerTopLinksSection">
+                <h5 class="footerTopLinksSection__Header">COMPANY</h5>
+                <ul class="footerTopLinksSection__List">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Locations</a></li>
+                  <li><a href="#">Franchises</a></li>
+                  <li><a href="#">About US</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
             </div>
           </div>
-        </nav>
+        </div>
+        <div class="footerBottom pt-5">
+          <p class="regularParagraph text-center"> ©2023 TOUS les JOURS International Corp. All Rights Reserved. </p>
+        </div>
       </div>
-    </section>
-    <!-- =====================Navbar Markup========================== -->
-    <!-- =====================Banenr Markup========================== -->
-    <section id="banner">
-        <div class="container-fluid">
-            <div class="bannerWrapper text-white">
-                <div class="bannerText d-flex flex-column align-items-center">
-                    <picture class="bannerText__logo">
-                        <img src="images/66b3e7d703c722123d0173fa_TLJ_logo_White.png" alt="images/66b3e7d703c722123d0173fa_TLJ_logo_White.png">
-                    </picture>
-                    <p class="bannerText__slogan text-uppercase text-center">Freshly Baked, Everyday</p>
-                    <button type="button" class="btn bannerText__btn py-2 px-5 mt-3"><a href="#">FIND LOCATIONS</a></button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- =====================Banner Markup========================== -->
-    <section id="feature">
-        <picture class="py-5">
-            <img src="images/feature.png" alt="images/feature.png">
-        </picture>
-    </section>
-    <!-- =====================Story Markup========================== -->
-    <section id="story">
-        <div class="storyWrapper row gx-3 flex-column-reverse flex-md-row ps-3">
-            <div class="storyLeft col-lg-7 col-md-6 row gx-3 px-2 px-lg-5">
-                <div class="storyLeft__large col-lg-8">
-                    <picture>
-                        <img src="images/st-1.webp" alt="images/st-1.webp">
-                    </picture>
-                </div>
-                <div class="storyLeft__small col-lg-4 d-flex flex-lg-column gap-3 flex-md-row">
-                    <picture>
-                        <img src="images/st-2.webp" alt="images/st-2.webp">
-                    </picture>
-                    <picture>
-                        <img src="images/st-3.webp" alt="images/st-3.webp">
-                    </picture>
-                </div>
-            </div>
-            <div class="storyRight col-lg-5 col-md-6 px-4 d-flex flex-column row-gap-4">
-                <h1 class="lg-header text-center">TOUS les JOURS: French Asian Bakery</h1>
-                <div class="storyRightBody d-flex flex-column align-items-start row-gap-3 px-4">
-                    <p class="storyRightBody__subHeader">OUR STORY</p>
-                    <h2 class="storyRightBody__Header md-header">Freshly Baked, Everyday</h2>
-                    <p class="storyRightBody__paragraph commonParagraph">With a commitment to using only the finest ingredients, our products are known for their unique flavors and wholesome qualities. Our skilled bakers create a wide array of delicious treats that are freshly baked and ready to be enjoyed by our customers seeking exceptional taste and quality.</p>
-                    <span class="storyRightBody__line"></span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- =====================Story Markup========================== -->
-    <!-- =====================Bakery Markup========================== -->
-    <section id="bakery">
-        <div class="container-fluid">
-            <div class="bakeryWrapper d-flex flex-column justify-content-center align-items-center ">
-                <div class="bakeryHead">
-                    <h1 class="lg-header text-center">Bakery</h1>
-                    <p class="commonParagraph text-center mt-5">At TOUS les JOURS, we offer a wide range of bakery items that are perfect for any occasion. From our freshly baked breads to our decadent cakes and pastries, each of our products is made with the finest ingredients and the utmost care.</p>
-                </div>
-                <div class="bakeryBody px-2 px-lg-5 row row-gap-5">
-                    <div class="bakeryBodyItem d-flex flex-column justify-content-center align-items-center row-gap-4 col-lg-6">
-                        <div class="bakeryBody__image">
-                            <img src="images/bread.webp" alt="images/bread.webp">
-                        </div>
-                        <h3 class="bakeryBodyItem__header">Bread</h3>
-                        <h5 class="bakeryBodyItem__hidden">VIEW BREADS</h5>
-                    </div>
-                    <div class="bakeryBodyItem d-flex flex-column justify-content-center align-items-center row-gap-4 col-lg-6">
-                        <div class="bakeryBody__image">
-                            <img src="images/cake.webp" alt="images/cake.webp">
-                        </div>
-                        <h3 class="bakeryBodyItem__header">Cake</h3>
-                        <h5 class="bakeryBodyItem__hidden">VIEW CAKES</h5>
-                    </div>
-                    <div class="bakeryBodyItem d-flex flex-column justify-content-center align-items-center row-gap-4 col-lg-6">
-                        <div class="bakeryBody__image">
-                            <img src="images/pastry.webp" alt="images/pastry.webp">
-                        </div>
-                        <h3 class="bakeryBodyItem__header">Pastry</h3>
-                        <h5 class="bakeryBodyItem__hidden">VIEW PASTRIES</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- =====================Bakery Markup========================== -->
-    <!-- =====================Story Markup========================== -->
-    <!-- =====================Story Markup========================== -->
-  </body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+  </section>
+  <!-- ============================Footer Markup=========================== -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>
